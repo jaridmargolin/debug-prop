@@ -9,7 +9,7 @@
  *
  * @desc Easily debug property changes on an object. By default debugging is
  *   disabled on the object. To enable debugging, the object must set
- *   `opts.debug` to tru.
+ *   `opts.debug` to true.
  *
  * @example
  * const obj = debugProp('state', {
@@ -25,7 +25,7 @@
  *   uuid: '1',
  *   state: 'test',
  *   opts: { debug: true}
- * }, function (val) => console.log(`${uuid}-state: ${val}`))
+ * }, function (val) => console.log(`${this.uuid}-state: ${val}`))
  *
  * obj.state = 'test2'
  * // logs => 1-state: test2
