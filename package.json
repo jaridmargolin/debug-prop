@@ -26,7 +26,7 @@
   "devDependencies": {
     "chai": "^4.0.2",
     "neutrino": "^7.0.0",
-    "neutrino-preset-library": "0.3.0",
+    "neutrino-preset-library": "1.0.0",
     "sinon": "^4.0.0"
   }
 }
