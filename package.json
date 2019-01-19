@@ -27,6 +27,6 @@
     "chai": "^4.0.2",
     "neutrino": "^7.0.0",
     "neutrino-preset-library": "1.0.1",
-    "sinon": "^6.0.0"
+    "sinon": "^7.2.3"
   }
 }
