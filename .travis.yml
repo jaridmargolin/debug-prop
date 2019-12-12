@@ -1,16 +1,18 @@
-sudo: required
-dist: trusty
-
 language: node_js
 node_js:
-- 8.0.0
-
-script: npm run test
-
-before_install:
-  - export CHROME_BIN=chromium-browser
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-
-after_success:
-  - npm run publish-cov
+  - '12'
+  - '10'
+  - '8'
+script:
+  - yarn test
+  - yarn build
+after_script:
+  - yarn publish-cov
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: docs
+  on:
+    branch: master
+    node_js: '12'

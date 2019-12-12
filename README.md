@@ -1,20 +1,33 @@
-<h1>debug-prop</h1>
-<div>
+<h1 align="center">debug-prop</h1>
+<div align="center">
   <p>Easily debug property changes on an object.</p>
   <div>
-  <a href="https://travis-ci.org/jaridmargolin/debug-prop"><img src="https://travis-ci.org/jaridmargolin/debug-prop.svg?branch=master" alt="Build Status"></a>
-  <a href="https://coveralls.io/github/jaridmargolin/debug-prop?branch=master"><img src="https://coveralls.io/repos/github/jaridmargolin/debug-prop/badge.svg?branch=master" alt="Coverage Status"></a>
-  <a href="http://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
+    <a href="https://travis-ci.org/jaridmargolin/debug-prop">
+      <img src="https://travis-ci.org/jaridmargolin/debug-prop.svg?branch=master" alt="Build Status">
+    </a>
+    <a href="https://codecov.io/gh/jaridmargolin/debug-prop">
+      <img src="https://codecov.io/gh/jaridmargolin/debug-prop/branch/master/graph/badge.svg" alt="Coverage Status"/>
+    </a>
+    <a href="http://standardjs.com/">
+      <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide">
+    </a>
   </div>
   <div>
-  <a href="https://npmjs.org/package/debug-prop"><img src="https://img.shields.io/npm/v/debug-prop.svg" alt="NPM debug-prop package"></a>
-  <a href="https://david-dm.org/jaridmargolin/debug-prop"><img src="https://david-dm.org/jaridmargolin/debug-prop.svg" alt="Dependency Status"></a>
-  <a href="https://david-dm.org/jaridmargolin/debug-prop#info=devDependencies"><img src="https://david-dm.org/jaridmargolin/debug-prop/dev-status.svg" alt="devDependency Status"></a>
+    <a href="https://npmjs.org/package/debug-prop">
+      <img src="https://img.shields.io/npm/v/@inventory/debug-prop.svg" alt="NPM debug-prop package">
+    </a>
+    <a href="https://david-dm.org/jaridmargolin/debug-prop">
+      <img src="https://david-dm.org/jaridmargolin/debug-prop.svg" alt="Dependency Status">
+    </a>
+    <a href="https://david-dm.org/jaridmargolin/debug-prop#info=devDependencies">
+      <img src="https://david-dm.org/jaridmargolin/debug-prop/dev-status.svg" alt="devDependency Status">
+    </a>
   </div>
-  <a href="http://jaridmargolin.github.io/debug-prop">View Documentation</a>
 </div>
 <br>
-
+<div align="center">
+<a href="http://jaridmargolin.github.io/debug-prop">View Documentation</a>
+</div>
 
 ## License
 

@@ -12,21 +12,53 @@
   "bugs": {
     "url": "https://github.com/jaridmargolin/debug-prop/issues"
   },
-  "main": "build/debug-prop",
-  "module": "src/index.js",
+  "main": "dist/common/debug-prop.js",
+  "module": "dist/es/debug-prop.js",
+  "browser": "dist/debug-prop.js",
+  "types": "dist/types/debug-prop.d.ts",
   "scripts": {
-    "build": "neutrino build",
-    "start": "neutrino test --watch",
-    "test": "neutrino test",
-    "view-cov": "neutrino view-cov",
-    "publish-cov": "neutrino publish-cov",
-    "build-docs": "neutrino build-docs",
-    "view-docs": "neutrino view-docs"
+    "check-types": "tsc",
+    "build": "yarn build-lib && yarn build-docs && yarn build-types",
+    "build-docs": "typedoc ./src/debug-prop.ts",
+    "build-lib": "rollup -c",
+    "build-types": "tsc -p tsconfig.build.json ",
+    "format": "prettier-eslint --write \"**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\"",
+    "prepublishOnly": "yarn build",
+    "publish-cov": "codecov",
+    "start": "jest --watch",
+    "test": "yarn lint && yarn check-types && jest",
+    "view-cov": "open-cli ./coverage/lcov-report/index.html",
+    "view-docs": "open-cli ./docs/index.html"
+  },
+  "dependencies": {
+    "@inventory/debug": "^0.0.1"
   },
   "devDependencies": {
-    "chai": "^4.0.2",
-    "neutrino": "^7.0.0",
-    "neutrino-preset-library": "1.0.1",
-    "sinon": "^7.2.3"
+    "@babel/core": "7.7.5",
+    "@babel/plugin-proposal-class-properties": "7.7.4",
+    "@babel/preset-env": "7.7.6",
+    "@babel/preset-typescript": "7.7.4",
+    "@types/jest": "24.0.23",
+    "@typescript-eslint/eslint-plugin": "2.11.0",
+    "@typescript-eslint/parser": "2.11.0",
+    "codecov": "4.0.0-0",
+    "eslint": "5.8.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.19.1",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "lint-staged": "9.5.0",
+    "opn-cli": "5.0.0",
+    "prettier-eslint-cli": "4.7.1",
+    "rollup": "1.27.9",
+    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-terser": "5.1.2",
+    "typedoc": "0.15.4",
+    "typescript": "3.7.3"
   }
 }
