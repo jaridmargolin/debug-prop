@@ -1,5 +1,5 @@
 {
-  "name": "debug-prop",
+  "name": "@inventory/debug-prop",
   "description": "Easily debug property changes on an object.",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
   "version": "0.0.1",
