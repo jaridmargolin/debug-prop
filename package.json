@@ -2,7 +2,7 @@
   "name": "@inventory/debug-prop",
   "description": "Easily debug property changes on an object.",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "homepage": "https://github.com/jaridmargolin/debug-prop",
   "repository": {
