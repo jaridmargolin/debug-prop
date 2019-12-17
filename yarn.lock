@@ -702,10 +702,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@inventory/debug@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@inventory/debug/-/debug-0.0.1.tgz#0ac36b0bdd3ca4ab68ec210bfc9077c401b1ba49"
-  integrity sha512-CXMAjvEj76yQ283jd8aPoVSB12V4vURcxDlp/h5YsFDnPWjRuSTs5vsY0MWe62ORf1qRl3kcY/8sL5srHG/Sfw==
+"@inventory/debug@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@inventory/debug/-/debug-0.0.2.tgz#20e1b36e9013782369125c6f2b382e9acdb1f7c9"
+  integrity sha512-lOsttlOk4AnDEL7x9NpVoB+dkxpbSFfbv9UY4GE7AK7vTKyz40toz37yeowq/UDe/FCwJdgJVqzYncn7bgklrA==
 
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"

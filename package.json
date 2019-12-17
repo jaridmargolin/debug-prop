@@ -32,7 +32,7 @@
     "view-docs": "open-cli ./docs/index.html"
   },
   "dependencies": {
-    "@inventory/debug": "^0.0.1"
+    "@inventory/debug": "^0.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.7.5",
