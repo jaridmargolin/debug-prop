@@ -32,7 +32,7 @@
     "view-docs": "open-cli ./docs/index.html"
   },
   "dependencies": {
-    "@inventory/debug": "^0.0.2",
+    "@inventory/debug": "^0.0.3",
     "core-js": "^3.6.0"
   },
   "devDependencies": {
