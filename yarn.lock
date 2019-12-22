@@ -737,10 +737,12 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@inventory/debug@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@inventory/debug/-/debug-0.0.2.tgz#20e1b36e9013782369125c6f2b382e9acdb1f7c9"
-  integrity sha512-lOsttlOk4AnDEL7x9NpVoB+dkxpbSFfbv9UY4GE7AK7vTKyz40toz37yeowq/UDe/FCwJdgJVqzYncn7bgklrA==
+"@inventory/debug@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@inventory/debug/-/debug-0.0.3.tgz#d31b5559acce813b0d5492cafadc1ff203bd857a"
+  integrity sha512-vE3Q+Uv4JTyOf9fGswlj/GaP56eMwTlQ9ckGkHnfO7qRrvScHE63IJam+i0rxynNxyQ6dzukG0SKQU4Nper1qA==
+  dependencies:
+    core-js "^3.6.0"
 
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
@@ -1814,6 +1816,11 @@ core-js@^2.4.0:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
+
+core-js@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.0.tgz#2b854e451de1967d1e29896025cdc13a2518d9ea"
+  integrity sha512-AHPTNKzyB+YwgDWoSOCaid9PUSEF6781vsfiK8qUz62zRR448/XgK2NtCbpiUGizbep8Lrpt0Du19PpGGZvw3Q==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
