@@ -4,19 +4,26 @@
  * dependencies
  * -------------------------------------------------------------------------- */
 
+// 3rd party
+import commonjs from '@rollup/plugin-commonjs'
+import resolve from '@rollup/plugin-node-resolve'
 import { terser } from 'rollup-plugin-terser'
 import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
 
 /* -----------------------------------------------------------------------------
  * rollup config
  * -------------------------------------------------------------------------- */
 
+const externals = [
+  '@inventory/debug',
+  'core-js/modules/es.object.define-property'
+]
+
 const sharedPlugins = [
   resolve({
-    extensions: ['.ts', '.tsx', '.mjs', '.js', '.jsx', '.json'],
-    module: true
+    extensions: ['.ts', '.tsx', '.mjs', '.js', '.jsx', '.json']
   }),
+  commonjs(),
   babel({
     extensions: ['.ts', '.tsx', '.mjs', '.js', '.jsx'],
     exclude: 'node_modules/**'
@@ -26,17 +33,7 @@ const sharedPlugins = [
 export default [
   {
     input: 'src/debug-prop.ts',
-    plugins: [...sharedPlugins],
-    output: {
-      file: 'dist/debug-prop.js',
-      format: 'umd',
-      name: 'debugProp',
-      exports: 'named'
-    }
-  },
-  {
-    input: 'src/debug-prop.ts',
-    external: ['@inventory/debug'],
+    external: externals,
     plugins: [...sharedPlugins],
     output: {
       file: 'dist/common/debug-prop.js',
@@ -46,11 +43,21 @@ export default [
   },
   {
     input: 'src/debug-prop.ts',
-    external: ['@inventory/debug'],
+    external: externals,
     plugins: [...sharedPlugins],
     output: {
       file: 'dist/es/debug-prop.js',
       format: 'es'
+    }
+  },
+  {
+    input: 'src/debug-prop.ts',
+    plugins: [...sharedPlugins],
+    output: {
+      file: 'dist/debug-prop.js',
+      format: 'umd',
+      name: 'debugProp',
+      exports: 'named'
     }
   },
   {
